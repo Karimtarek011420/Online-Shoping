@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "https://ecommerce.routemisr.com/api/v1"
-      }
-    ]
-  }
