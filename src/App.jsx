@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {  createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Product from "./Components/Product/Product";
 import Regisiter from "./Components/Register/Regisiter";
@@ -17,7 +17,7 @@ import Payment from "./Components/Payment/Payment";
 import Allbrands from "./Components/Allbrands/Allbrands";
 
 const queryClient = new QueryClient();
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "",
     element: <Layout />,
