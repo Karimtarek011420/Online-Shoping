@@ -1,0 +1,28 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content to take full space */
+.main-content {
+  flex: 1;
+}
+
+/* Footer specific styling if needed */
+footer {
+  margin-top: auto;
+}
