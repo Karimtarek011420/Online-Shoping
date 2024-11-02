@@ -1,8 +1,16 @@
 {
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "https://ecommerce.routemisr.com/api/$1"
+    },
+    {
+      "source": "/static/(.*)",
+      "destination": "/static/$1"
+    },
+    {
       "source": "/(.*)",
-      "destination": "https://ecommerce.routemisr.com"
+      "destination": "/index.html"
     }
   ]
 }
