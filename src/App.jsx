@@ -12,9 +12,9 @@ import ProductDatils from "./Components/ProductDatils/ProductDatils";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import CartContextProvider from "./Context/CartContextProvider";
 import { Toaster } from "react-hot-toast";
-import Brands from "./Components/brands/brands";
 import Cart from "./Components/Cart/Cart";
 import Payment from "./Components/Payment/Payment";
+import Allbrands from "./Components/Allbrands/Allbrands";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -47,6 +47,14 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "Brands",
+        element: (
+          <ProtectRouter>
+             <Allbrands/>
+          </ProtectRouter>
+        ),
+      },
+      {
         path: "ProductDatils/:id",
         element: (
           <ProtectRouter>
@@ -64,7 +72,6 @@ const router = createBrowserRouter([
       },
       { path: "register", element: <Regisiter /> },
       { path: "login", element: <Login /> },
-      { path: "brands", element: <Brands /> },
       { path: "cart", element: <Cart /> },
       { path: "Forgatpassword", element: <Forgatpassword /> },
       { path: "resertPassword", element: <ResetPassword /> },
