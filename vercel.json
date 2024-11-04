@@ -1,15 +1,8 @@
 {
-  "version":2,
-  "builds":[
+  "rewrites": [
     {
-      "src": "./main.js", 
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/(.*)",
+      "destination": "https://ecommerce.routemisr.com"
     }
   ]
 }
