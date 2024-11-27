@@ -27,8 +27,7 @@ const ResetPassword = () => {
     setLoading(true);
     try {
       await axios.put(
-        "https://ecommerce.routemisr.com/api/v1/auth/resetPassword",
-        { email, newPassword }
+        "https://ecommerce.routemisr.com/api/v1/auth/resetPassword", { email, newPassword }
       );
       alert("Password reset successfully");
       navigate("/login");
