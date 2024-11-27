@@ -2,10 +2,9 @@ import { useContext, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo2.webp";
 import { authtoken } from "../../Context/Authtoken";
-import { Badge } from "react-bootstrap";
 import { CartContext } from "../../Context/CartContextProvider";
 
-export default function Navbar() {
+export default function Navbarheader() {
   const [isOpen, setIsOpen] = useState(false);
   const { token, settoken } = useContext(authtoken);
   const { numOfCartItems } = useContext(CartContext);

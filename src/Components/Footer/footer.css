@@ -1,0 +1,13 @@
+footer {
+    background: linear-gradient(to right, #f7fafc, #bce1ff, #f7fafc);
+  }
+  
+  footer p, footer a {
+    transition: color 0.3s, opacity 0.3s;
+  }
+  
+  footer a:hover {
+    color: #1a202c;
+    opacity: 0.8;
+  }
+  
